@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11074369253F444C007E82B2 /* StructView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11074368253F444C007E82B2 /* StructView.swift */; };
+		115F7FA82528F96900FE5FCE /* EmeraldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F7FA72528F96900FE5FCE /* EmeraldApp.swift */; };
+		115F7FAA2528F96900FE5FCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F7FA92528F96900FE5FCE /* ContentView.swift */; };
+		115F7FAC2528F96900FE5FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115F7FAB2528F96900FE5FCE /* Assets.xcassets */; };
+		115F7FAF2528F96900FE5FCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115F7FAE2528F96900FE5FCE /* Preview Assets.xcassets */; };
+		115F7FBA2528F96A00FE5FCE /* EmeraldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F7FB92528F96A00FE5FCE /* EmeraldTests.swift */; };
+		115F7FC52528F96A00FE5FCE /* EmeraldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F7FC42528F96A00FE5FCE /* EmeraldUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		115F7FB62528F96A00FE5FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115F7F9C2528F96900FE5FCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115F7FA32528F96900FE5FCE;
+			remoteInfo = Emerald;
+		};
+		115F7FC12528F96A00FE5FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115F7F9C2528F96900FE5FCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115F7FA32528F96900FE5FCE;
+			remoteInfo = Emerald;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11074368253F444C007E82B2 /* StructView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructView.swift; sourceTree = "<group>"; };
+		115F7FA42528F96900FE5FCE /* Emerald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerald.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		115F7FA72528F96900FE5FCE /* EmeraldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmeraldApp.swift; sourceTree = "<group>"; };
+		115F7FA92528F96900FE5FCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		115F7FAB2528F96900FE5FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		115F7FAE2528F96900FE5FCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		115F7FB02528F96900FE5FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115F7FB52528F96A00FE5FCE /* EmeraldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmeraldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		115F7FB92528F96A00FE5FCE /* EmeraldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmeraldTests.swift; sourceTree = "<group>"; };
+		115F7FBB2528F96A00FE5FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115F7FC02528F96A00FE5FCE /* EmeraldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmeraldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		115F7FC42528F96A00FE5FCE /* EmeraldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmeraldUITests.swift; sourceTree = "<group>"; };
+		115F7FC62528F96A00FE5FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		115F7FA12528F96900FE5FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FB22528F96A00FE5FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FBD2528F96A00FE5FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		115F7F9B2528F96900FE5FCE = {
+			isa = PBXGroup;
+			children = (
+				115F7FA62528F96900FE5FCE /* Emerald */,
+				115F7FB82528F96A00FE5FCE /* EmeraldTests */,
+				115F7FC32528F96A00FE5FCE /* EmeraldUITests */,
+				115F7FA52528F96900FE5FCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		115F7FA52528F96900FE5FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115F7FA42528F96900FE5FCE /* Emerald.app */,
+				115F7FB52528F96A00FE5FCE /* EmeraldTests.xctest */,
+				115F7FC02528F96A00FE5FCE /* EmeraldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		115F7FA62528F96900FE5FCE /* Emerald */ = {
+			isa = PBXGroup;
+			children = (
+				115F7FA72528F96900FE5FCE /* EmeraldApp.swift */,
+				115F7FA92528F96900FE5FCE /* ContentView.swift */,
+				11074368253F444C007E82B2 /* StructView.swift */,
+				115F7FAB2528F96900FE5FCE /* Assets.xcassets */,
+				115F7FB02528F96900FE5FCE /* Info.plist */,
+				115F7FAD2528F96900FE5FCE /* Preview Content */,
+			);
+			path = Emerald;
+			sourceTree = "<group>";
+		};
+		115F7FAD2528F96900FE5FCE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				115F7FAE2528F96900FE5FCE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		115F7FB82528F96A00FE5FCE /* EmeraldTests */ = {
+			isa = PBXGroup;
+			children = (
+				115F7FB92528F96A00FE5FCE /* EmeraldTests.swift */,
+				115F7FBB2528F96A00FE5FCE /* Info.plist */,
+			);
+			path = EmeraldTests;
+			sourceTree = "<group>";
+		};
+		115F7FC32528F96A00FE5FCE /* EmeraldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				115F7FC42528F96A00FE5FCE /* EmeraldUITests.swift */,
+				115F7FC62528F96A00FE5FCE /* Info.plist */,
+			);
+			path = EmeraldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		115F7FA32528F96900FE5FCE /* Emerald */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115F7FC92528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "Emerald" */;
+			buildPhases = (
+				115F7FA02528F96900FE5FCE /* Sources */,
+				115F7FA12528F96900FE5FCE /* Frameworks */,
+				115F7FA22528F96900FE5FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emerald;
+			productName = Emerald;
+			productReference = 115F7FA42528F96900FE5FCE /* Emerald.app */;
+			productType = "com.apple.product-type.application";
+		};
+		115F7FB42528F96A00FE5FCE /* EmeraldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115F7FCC2528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "EmeraldTests" */;
+			buildPhases = (
+				115F7FB12528F96A00FE5FCE /* Sources */,
+				115F7FB22528F96A00FE5FCE /* Frameworks */,
+				115F7FB32528F96A00FE5FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115F7FB72528F96A00FE5FCE /* PBXTargetDependency */,
+			);
+			name = EmeraldTests;
+			productName = EmeraldTests;
+			productReference = 115F7FB52528F96A00FE5FCE /* EmeraldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		115F7FBF2528F96A00FE5FCE /* EmeraldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115F7FCF2528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "EmeraldUITests" */;
+			buildPhases = (
+				115F7FBC2528F96A00FE5FCE /* Sources */,
+				115F7FBD2528F96A00FE5FCE /* Frameworks */,
+				115F7FBE2528F96A00FE5FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115F7FC22528F96A00FE5FCE /* PBXTargetDependency */,
+			);
+			name = EmeraldUITests;
+			productName = EmeraldUITests;
+			productReference = 115F7FC02528F96A00FE5FCE /* EmeraldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		115F7F9C2528F96900FE5FCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					115F7FA32528F96900FE5FCE = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					115F7FB42528F96A00FE5FCE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 115F7FA32528F96900FE5FCE;
+					};
+					115F7FBF2528F96A00FE5FCE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 115F7FA32528F96900FE5FCE;
+					};
+				};
+			};
+			buildConfigurationList = 115F7F9F2528F96900FE5FCE /* Build configuration list for PBXProject "Emerald" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 115F7F9B2528F96900FE5FCE;
+			productRefGroup = 115F7FA52528F96900FE5FCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				115F7FA32528F96900FE5FCE /* Emerald */,
+				115F7FB42528F96A00FE5FCE /* EmeraldTests */,
+				115F7FBF2528F96A00FE5FCE /* EmeraldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		115F7FA22528F96900FE5FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115F7FAF2528F96900FE5FCE /* Preview Assets.xcassets in Resources */,
+				115F7FAC2528F96900FE5FCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FB32528F96A00FE5FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FBE2528F96A00FE5FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		115F7FA02528F96900FE5FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115F7FAA2528F96900FE5FCE /* ContentView.swift in Sources */,
+				115F7FA82528F96900FE5FCE /* EmeraldApp.swift in Sources */,
+				11074369253F444C007E82B2 /* StructView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FB12528F96A00FE5FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115F7FBA2528F96A00FE5FCE /* EmeraldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115F7FBC2528F96A00FE5FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115F7FC52528F96A00FE5FCE /* EmeraldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		115F7FB72528F96A00FE5FCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115F7FA32528F96900FE5FCE /* Emerald */;
+			targetProxy = 115F7FB62528F96A00FE5FCE /* PBXContainerItemProxy */;
+		};
+		115F7FC22528F96A00FE5FCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115F7FA32528F96900FE5FCE /* Emerald */;
+			targetProxy = 115F7FC12528F96A00FE5FCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		115F7FC72528F96A00FE5FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		115F7FC82528F96A00FE5FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		115F7FCA2528F96A00FE5FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Emerald/Preview Content\"";
+				DEVELOPMENT_TEAM = MAF34NW233;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Emerald/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.Emerald";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		115F7FCB2528F96A00FE5FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Emerald/Preview Content\"";
+				DEVELOPMENT_TEAM = MAF34NW233;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Emerald/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.Emerald";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		115F7FCD2528F96A00FE5FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MAF34NW233;
+				INFOPLIST_FILE = EmeraldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.EmeraldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emerald.app/Emerald";
+			};
+			name = Debug;
+		};
+		115F7FCE2528F96A00FE5FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MAF34NW233;
+				INFOPLIST_FILE = EmeraldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.EmeraldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emerald.app/Emerald";
+			};
+			name = Release;
+		};
+		115F7FD02528F96A00FE5FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MAF34NW233;
+				INFOPLIST_FILE = EmeraldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.EmeraldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emerald;
+			};
+			name = Debug;
+		};
+		115F7FD12528F96A00FE5FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MAF34NW233;
+				INFOPLIST_FILE = EmeraldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SHUE-.EmeraldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emerald;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115F7F9F2528F96900FE5FCE /* Build configuration list for PBXProject "Emerald" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115F7FC72528F96A00FE5FCE /* Debug */,
+				115F7FC82528F96A00FE5FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115F7FC92528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "Emerald" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115F7FCA2528F96A00FE5FCE /* Debug */,
+				115F7FCB2528F96A00FE5FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115F7FCC2528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "EmeraldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115F7FCD2528F96A00FE5FCE /* Debug */,
+				115F7FCE2528F96A00FE5FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115F7FCF2528F96A00FE5FCE /* Build configuration list for PBXNativeTarget "EmeraldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115F7FD02528F96A00FE5FCE /* Debug */,
+				115F7FD12528F96A00FE5FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 115F7F9C2528F96900FE5FCE /* Project object */;
+}
