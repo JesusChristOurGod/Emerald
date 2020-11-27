@@ -16,6 +16,7 @@ struct StructView: View {
     @State var startRealYPos: CGFloat = 0
     @State var startRealXPos: CGFloat = 0
     @State var drawType: String = ""
+    @State var isIt: Bool = false
     var body: some View {
         VStack {
         ZStack {
@@ -38,6 +39,8 @@ struct StructView: View {
                             }
                             if self.drawType=="choosing" {
                                 selectData.append(.init(id: .init(), selStartX: self.startXPos, selStartY: self.startYPos, selCurrentX: self.startRealXPos, selCurrentY: self.startRealYPos))
+                                self.changeCounter = 0
+
 
                             }
                             
@@ -45,6 +48,37 @@ struct StructView: View {
             )
             ForEach(data){ items in
                 ShapeViewer(data: items)
+                if (selectData[0].selCurrentX > items.startX && selectData[0].selCurrentX < items.currentX) {
+                    isIt =  true
+                }
+                if (selectData[0].selStartX > items.startX && selectData[0].selStartX < items.currentX) {
+                    isIt =  true
+                }
+                
+                
+                if (selectData[0].selCurrentX>items.currentX && selectData[0].selStartX < items.startX && selectData[0].selCurrentY>items.currentY && selectData[0].selStartX < items.startY ) {
+                    isIt =  true
+                }
+                if (selectData[0].selStartX>items.currentX && selectData[0].selCurrentY < items.startX && selectData[0].selStartY>items.currentY && selectData[0].selCurrentY < items.startY ) {
+                    isIt =  true
+                }
+                
+                
+                if (selectData[0].selCurrentY>items.currentX && selectData[0].selStartX < items.startX && selectData[0].selCurrentY<items.currentY && selectData[0].selCurrentY>items.startY  && selectData[0].selStartY < items.startY ) {
+                    isIt =  true
+                }
+                if (selectData[0].selStartX>items.currentX && selectData[0].selCurrentX < items.startX && selectData[0].selStartY<items.currentY && selectData[0].selStartY>items.startY && selectData[0].selCurrentY < items.startY ) {
+                    isIt =  true
+                }
+                
+                
+                if (selectData[0].selCurrentY>items.currentY && selectData[0].selCurrentY > items.currentX && selectData[0].selStartX < items.startX && selectData[0].selStartY > items.startY && selectData[0].selStarY < items.currentY) {
+                    isIt =  true
+                }
+                if (selectData[0].selStartY>items.currentY && selectData[0].selStartX > items.currentX && selectData[0].selCurrentY < items.startX && selectData[0].selCurrentY > items.startY && selectData[0].selCurrentY < items.currentY) {
+                    isIt =  true
+                }
+                items.higlighted = true
             }
             ForEach(selectData) { items in
                 SelectViewer(selectData: items)
@@ -73,48 +107,48 @@ struct StructView: View {
     }
     
     
-    func isSelected() -> Bool {
-        var isIt: Bool = false
-        var selectStartX: CGFloat = 0
-        var selectStartY: CGFloat = 0
-        var selectEndX: CGFloat = 0
-        var selectEndY: CGFloat = 0
-        
-        data.forEach { items in
-            if (selectEndX > items.startX && selectEndX < items.currentX) {
-                isIt =  true
-            }
-            if (selectStartX > items.startX && selectStartX < items.currentX) {
-                isIt =  true
-            }
-            
-            
-            if (selectEndX>items.currentX && selectStartX < items.startX && selectEndY>items.currentY && selectStartY < items.startY ) {
-                isIt =  true
-            }
-            if (selectStartX>items.currentX && selectEndX < items.startX && selectStartY>items.currentY && selectEndY < items.startY ) {
-                isIt =  true
-            }
-            
-            
-            if (selectEndX>items.currentX && selectStartX < items.startX && selectEndY<items.currentY && selectEndY>items.startY  && selectStartY < items.startY ) {
-                isIt =  true
-            }
-            if (selectStartX>items.currentX && selectEndX < items.startX && selectStartY<items.currentY && selectStartY>items.startY && selectEndY < items.startY ) {
-                isIt =  true
-            }
-            
-            
-            if (selectEndY>items.currentY && selectEndX > items.currentX && selectStartX < items.startX && selectStartY > items.startY && selectStartY < items.currentY) {
-                isIt =  true
-            }
-            if (selectStartY>items.currentY && selectStartX > items.currentX && selectEndX < items.startX && selectEndY > items.startY && selectEndY < items.currentY) {
-                isIt =  true
-            }
-            
-        }
-        return isIt
-    }
+//    func isSelected() -> Bool {
+//        var isIt: Bool = false
+//        var selectStartX: CGFloat = 0
+//        var selectStartY: CGFloat = 0
+//        var selectEndX: CGFloat = 0
+//        var selectEndY: CGFloat = 0
+//
+//        data.forEach { items in
+//            if (selectEndX > items.startX && selectEndX < items.currentX) {
+//                isIt =  true
+//            }
+//            if (selectStartX > items.startX && selectStartX < items.currentX) {
+//                isIt =  true
+//            }
+//
+//
+//            if (selectEndX>items.currentX && selectStartX < items.startX && selectEndY>items.currentY && selectStartY < items.startY ) {
+//                isIt =  true
+//            }
+//            if (selectStartX>items.currentX && selectEndX < items.startX && selectStartY>items.currentY && selectEndY < items.startY ) {
+//                isIt =  true
+//            }
+//
+//
+//            if (selectEndX>items.currentX && selectStartX < items.startX && selectEndY<items.currentY && selectEndY>items.startY  && selectStartY < items.startY ) {
+//                isIt =  true
+//            }
+//            if (selectStartX>items.currentX && selectEndX < items.startX && selectStartY<items.currentY && selectStartY>items.startY && selectEndY < items.startY ) {
+//                isIt =  true
+//            }
+//
+//
+//            if (selectEndY>items.currentY && selectEndX > items.currentX && selectStartX < items.startX && selectStartY > items.startY && selectStartY < items.currentY) {
+//                isIt =  true
+//            }
+//            if (selectStartY>items.currentY && selectStartX > items.currentX && selectEndX < items.startX && selectEndY > items.startY && selectEndY < items.currentY) {
+//                isIt =  true
+//            }
+//
+//        }
+//        return isIt
+//    }
 }
 
 struct ShapeModel: Identifiable {
@@ -124,6 +158,7 @@ struct ShapeModel: Identifiable {
     var startY: CGFloat
     var currentX: CGFloat
     var currentY: CGFloat
+    var higlighted: Bool
 }
 
 
@@ -150,7 +185,7 @@ struct SelectViewer:View {
     var body: some View {
         Path{ path in
             path.addRect(CGRect(x: self.selectData.selStartX, y: self.selectData.selStartY, width: self.selectData.selCurrentX-self.selectData.selStartX, height: self.selectData.selCurrentY-self.selectData.selStartY))
-        }.stroke(Color.blue,style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+        }.stroke(Color.blue)
     }
 }
 
