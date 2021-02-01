@@ -49,21 +49,14 @@ struct ContentView: View {
             })
                     if drawType == "rectangle" {
                         Path() {path in
-                            
-                            
-                            
                             path.addRect(CGRect(x: startXPos, y: startYPos, width: startRealXPos-startXPos, height: startRealYPos-startYPos))
                             equasion()
-                            
-
                         }
                     }
                     if drawType == "choosing" {
                         Path() { path in
                             path.addRect(CGRect(x: newstartXPos, y: newstartYPos, width: -newstartXPos+newstartRealXPos, height: -newstartYPos+newstartRealYPos))
-                            
                         }.stroke(Color.blue, lineWidth: 5)
-                        
                     }
                 }
             
